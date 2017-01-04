@@ -7,5 +7,5 @@ public class box
 {
     private String name;
 
-    private int Number;
+    private int number;
 }
