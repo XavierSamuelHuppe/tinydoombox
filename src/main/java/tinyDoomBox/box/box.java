@@ -6,4 +6,6 @@ import lombok.Data;
 public class box
 {
     private String name;
+
+    private int Number;
 }
