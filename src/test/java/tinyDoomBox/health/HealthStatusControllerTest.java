@@ -17,15 +17,16 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class HealthStatusControllerTest {
+public class HealthStatusControllerTest
+{
 
     @Autowired
     private MockMvc mvc;
 
     @Test
-    public void getHealthStatus() throws Exception {
+    public void getHealthStatus() throws Exception
+    {
         mvc.perform(MockMvcRequestBuilders.get("/healthstatus").accept(MediaType.APPLICATION_JSON))
-                .andExpect(status().isOk())
-                .andExpect(content().string(equalTo("Tiny Doom Box is alive!")));
+                .andExpect(status().isOk()).andExpect(content().string(equalTo("Tiny Doom Box is alive!")));
     }
 }
