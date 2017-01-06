@@ -26,7 +26,7 @@ public class HealthStatusControllerTestWD
     @Before
     public void start()
     {
-        System.setProperty("webdriver.chrome.driver", "src/test/ressources/selenium/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/selenium/chromedriver");
         driver = new ChromeDriver();
     }
 
